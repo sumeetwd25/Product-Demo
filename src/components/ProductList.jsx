@@ -69,6 +69,59 @@ const ProductList = () => {
       price: 2499,
       category: 'xbox',
     }, 
+    {
+      name: 'Xbox Series S',
+      imageUrl: 'https://m.media-amazon.com/images/I/71NBQ2a52CL._AC_UY327_FMwebp_QL65_.jpg',
+      miniDescription: 'Xbox Gaming Console',
+      description: "Introducing the Xbox Series S, the smallest, sleekest Xbox console ever. Experience the speed and performance of a next-gen all-digital console at an accessible price point. Get started with an instant library of 100+ high quality games, including all new Xbox Game Studios titles like Halo Infinite the day they release, when you add Xbox Game Pass Ultimate (membership sold separately). Seamlessly move between multiple games in a flash with Quick Resume. At the heart of Series S is the Xbox Velocity Architecture, which pairs a custom-SSD with integrated software for faster, streamlined gameplay with significantly reduced load times.",
+      price: 31799,
+      category: 'xbox',
+    },
+    {
+      name: 'Xbox Series X',
+      imageUrl: 'https://m.media-amazon.com/images/I/61-jjE67uqL._AC_UY327_FMwebp_QL65_.jpg',
+      miniDescription: 'Xbox Gaming Console',
+      description: `Introducing Xbox series X, the fastest, most powerful Xbox ever. Play thousands of titles from four generations of consoles—all games look and play best on Xbox series X.
+      Experience next-gen speed and performance with the Xbox velocity architecture, powered by a custom SSD and integrated software.
+      Play thousands of games from four generations of Xbox with backward compatibility, including optimized titles at launch.
+      Xbox game Pass ultimate includes over 100 high-quality games, online multiplayer, and an EA play membership for one low monthly price (membership sold separately).
+      Xbox Smart delivery ensures you play the best available version of your game no matter which console you're playing on.`,
+      price: 47990,
+      category: 'xbox',
+    },
+    {
+      name: 'Xbox Game Pass',
+      imageUrl: 'https://m.media-amazon.com/images/I/51pikoc-ViL._AC_UY327_FMwebp_QL65_.jpg',
+      miniDescription: 'Xbox Membership (1 month)',
+      description: "Enjoy hundreds of high-quality games with Xbox Game Pass Ultimate. Play new games on day one like Starfield from Bethesda Softworks as well as iconic franchises like Halo from Xbox Game Studios, indie games, blockbusters, and more. Includes online multiplayer so you can play together with friends on console and PC. Plus, an EA Play membership gives you access to top titles on console and PC, including best-loved series like Battlefield and STAR WARS. Get more from the games you love, including exclusive in-game challenges and rewards, special member-only content, and early trials of select new EA titles. With Xbox Game Pass Ultimate, you also get exclusive Perks including in-game content, consumables, and more. Get additional benefits on select games in the Xbox Game Pass library and related game add-ons. Tap into the heart of the Xbox community and join millions of players ready and waiting to play together.",
+      price: 549,
+      category: 'xbox',
+    },
+    {
+      name: 'Playstation 5',
+      imageUrl: 'https://m.media-amazon.com/images/I/51wPWj--fAL._AC_UY327_FMwebp_QL65_.jpg',
+      miniDescription: 'PS5 Gaming Console',
+      description: `Maximize your play sessions with near instant load times for installed PS5 games.
+      The custom integration of the PS5 console's systems lets creators pull data from the SSD so quickly that they can design games in ways never before possible.
+      Immerse yourself in worlds with a new level of realism as rays of light are individually simulated, creating true-to-life shadows and reflections in supported PS5 games.
+      Play your favorite PS5 games on your stunning 4K TV.
+      Enjoy smooth and fluid high frame rate gameplay at up to 120fps for compatible games, with support for 120Hz output on 4K displays.
+      With an HDR TV, supported PS5 games display an unbelievably vibrant and lifelike range of colors.
+      PS5 consoles support 8K Output, so you can play games on your 4320p resolution display.
+      Immerse yourself in soundscapes where it feels as if the sound comes from every direction. Through your headphones or TV speakers your surroundings truly come alive with Tempest 3D AudioTech in supported games.
+      Experience haptic feedback via the DualSense wireless controller in select PS5 titles and feel the effects and impact of your in-game actions through dynamic sensory feedback.
+      Get to grips with immersive adaptive triggers, featuring dynamic resistance levels which simulate the physical impact of in-game activities in select PS5 games.`,
+      price: 44990,
+      category: 'ps5',
+    },
+    {
+      name: 'God of War',
+      imageUrl: 'https://m.media-amazon.com/images/I/81emBOJxExL._AC_UY327_FMwebp_QL65_.jpg',
+      miniDescription: 'PS4 game',
+      description: "It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfil a deeply personal quest.",
+      price: 899,
+      category: 'ps4',
+    },
   ];
 
   const handleDetailsClick = (product) => {
@@ -88,14 +141,6 @@ const ProductList = () => {
       });
     }
   }, [selectedProduct]);
-
-  // Scroll to the ProductDetails component
-  if (productDetailsRef.current) {
-    productDetailsRef.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  }
 
   // Filter products based on the selected category
   const filteredProducts = selectedCategory === 'all'

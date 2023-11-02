@@ -15,7 +15,7 @@ const ProductCard = ({ product, onDetailsClick }) => {
 
   return (
     <ProductCardContainer>
-      <img src={imageUrl} alt={name} style={{ width: '150px', height: '200px' }} />
+      <img src={imageUrl} alt={name} style={{ maxWidth: '190px', height: '200px' }} />
       <h3>{name}</h3>
       <p>{miniDescription}</p>
       <p>Price: Rs.{price}</p>
