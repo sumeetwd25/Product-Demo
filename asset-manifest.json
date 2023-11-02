@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sumeetwd25/Product-Demo/static/css/main.b3baedaf.css",
+    "main.js": "/sumeetwd25/Product-Demo/static/js/main.b3b63155.js",
+    "static/js/787.91f7c6bf.chunk.js": "/sumeetwd25/Product-Demo/static/js/787.91f7c6bf.chunk.js",
+    "index.html": "/sumeetwd25/Product-Demo/index.html",
+    "main.b3baedaf.css.map": "/sumeetwd25/Product-Demo/static/css/main.b3baedaf.css.map",
+    "main.b3b63155.js.map": "/sumeetwd25/Product-Demo/static/js/main.b3b63155.js.map",
+    "787.91f7c6bf.chunk.js.map": "/sumeetwd25/Product-Demo/static/js/787.91f7c6bf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3baedaf.css",
+    "static/js/main.b3b63155.js"
+  ]
+}
