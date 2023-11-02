@@ -117,7 +117,7 @@ const ProductList = () => {
     {
       name: 'God of War',
       imageUrl: 'https://m.media-amazon.com/images/I/81emBOJxExL._AC_UY327_FMwebp_QL65_.jpg',
-      miniDescription: 'PS4 game',
+      miniDescription: 'PS4 game (2018)',
       description: "It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfil a deeply personal quest.",
       price: 899,
       category: 'ps4',
