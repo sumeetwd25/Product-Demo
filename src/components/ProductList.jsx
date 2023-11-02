@@ -142,6 +142,16 @@ const ProductList = () => {
     }
   }, [selectedProduct]);
 
+  // Reset pagination to page 1 when sorting changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedSort]);
+
+  // Reset pagination to page 1 when category changes
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [selectedCategory]);
+
   // Filter products based on the selected category
   const filteredProducts = selectedCategory === 'all'
     ? products
