@@ -28,7 +28,6 @@ const ProductList = () => {
       price: 2449,
       category: 'ps5',
     },
-    // Add more product objects as needed
     {
       name: 'Forza Horizon 5',
       imageUrl: 'https://m.media-amazon.com/images/I/716ej6hzPbL._AC_UY327_FMwebp_QL65_.jpg',
@@ -118,7 +117,8 @@ const ProductList = () => {
       name: 'God of War',
       imageUrl: 'https://m.media-amazon.com/images/I/81emBOJxExL._AC_UY327_FMwebp_QL65_.jpg',
       miniDescription: 'PS4 game (2018)',
-      description: "It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfil a deeply personal quest.",
+      description: `It is a new beginning for Kratos. Living as a man outside the shadow of the gods, he ventures into the brutal Norse wilds with his son Atreus, fighting to fulfil a deeply personal quest.
+      God of War is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. It was released for the PlayStation 4 in April 2018, with a Windows port in January 2022.`,
       price: 899,
       category: 'ps4',
     },
@@ -171,7 +171,7 @@ const ProductList = () => {
       <h1>Products List</h1>
 
       {/* Filter and Sort Dropdowns */}
-      <div className="filter-sort">
+      <div className="filter-sort" >
         <select
           value={selectedCategory}
           onChange={(e) => setSelectedCategory(e.target.value)}
@@ -192,7 +192,7 @@ const ProductList = () => {
         </select>
       </div>
 
-      <div className="product-list">
+      <div className="product-list" >
         {currentProducts.map((product, index) => (
           <ProductCard
             key={index}
